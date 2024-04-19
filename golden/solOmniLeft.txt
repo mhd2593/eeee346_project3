@@ -1,0 +1,38 @@
+--------------------------------------
+Robot State
+--------------------------------------
+Model: Omnidirectional Drive
+--------------------------------------
+--------------------------------------
+Mobile Robot State
+--------------------------------------
+Linear Velocity: 3.14159 m/s
+Rotational Velocity: 0 rad/s
+Vx: 0 m/s
+Vy: 3.14159 m/s
+--------------------------------------
+Wheel States
+--------------------------------------
+Name: Front Left
+Position: (0.5 m, 0.5 m)
+Velocity: -0.5 rev/s
+--------------------------------------
+Name: Front Right
+Position: (0.5 m, -0.5 m)
+Velocity: 0.5 rev/s
+--------------------------------------
+Name: Back Left
+Position: (-0.5 m, 0.5 m)
+Velocity: 0.5 rev/s
+--------------------------------------
+Name: Back Right
+Position: (-0.5 m, -0.5 m)
+Velocity: -0.5 rev/s
+--------------------------------------
+--------------------------------------
+Omnidirectional Drive Robot State
+--------------------------------------
+Wheel Radius: 1
+Wheel Distance Left-Right: 1
+Wheel Distance Front-Back: 1
+--------------------------------------
