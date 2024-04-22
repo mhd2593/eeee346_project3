@@ -5,7 +5,8 @@
 #include "MobileRobot.h"
 
 class DifferentialDriveRobot : public MobileRobot {
-  shared_ptr<Wheel> leftWheel;
+
+    shared_ptr<Wheel> leftWheel;
   shared_ptr<Wheel> rightWheel;
   double wheelRadius;
   double wheelDistance;
@@ -55,6 +56,8 @@ public:
    * print the DifferentialDriveRobot state
    */
   void print() override;
+
+    DifferentialDriveRobot(string model, double r, double d);
 };
 
 #endif

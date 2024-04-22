@@ -4,7 +4,9 @@
 #include "MobileRobot.h"
 
 class OmnidirectionalDriveRobot : public MobileRobot {
-  static const string MODEL_NAME;
+    OmnidirectionalDriveRobot(string model1, string model, double r, double d, double e);
+
+    static const string MODEL_NAME;
   shared_ptr<Wheel> frontLeftWheel;
   shared_ptr<Wheel> frontRightWheel;
   shared_ptr<Wheel> backLeftWheel;

@@ -5,7 +5,9 @@
 
 class MobileRobot : public Robot {
 protected:
-  /*
+    MobileRobot(string model1, string model);
+
+/*
    * a set of wheels for the mobile robot
    * shared pointers pointing to objects of Wheel are stored in this set
    */
