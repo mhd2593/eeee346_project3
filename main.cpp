@@ -41,7 +41,7 @@ int main(void) {
         //DifferentialDriveRobot diffRobot =  DifferentialDriveRobot("2",2,2);
        // diffRobot = DifferentialDriveRobot();
        // DifferentialDriveRobot
-       robot = new DifferentialDriveRobot(radius, wheelDist);
+       robot = new DifferentialDriveRobot("Differential Drive",radius, wheelDist);
 
 
 
@@ -69,7 +69,7 @@ int main(void) {
         cin >> radius >> lrDist >> fbDist;
 
         /*TODO: make the object pointer robot point to a new object of OmnidirectionalDriveRobot*/
-        robot = new OmnidirectionalDriveRobot(radius, lrDist, fbDist);
+        robot = new OmnidirectionalDriveRobot("Omnidirectional Drive", "robot", radius, lrDist, fbDist);
         // receive the values of wheel velocities
         cin >> flVel >> frVel >> blVel >> brVel;
 

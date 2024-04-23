@@ -25,7 +25,12 @@ public:
      * @param x - position in the x-axis
      * @param y - poition in the y-axis
      */
-    Wheel(string name, double r, double x, double y);
+    Wheel(string names, double r, double xs, double ys){
+    name = names;
+        radius = r;
+        x = xs;
+        y = ys;
+    };
 
     /*
      * @return radius of the wheel
@@ -41,7 +46,8 @@ public:
      * set wheel velocity
      * @param v - velocity of the wheel
      */
-    void setVelocity(double v) { velocity = v; };
+    void setVelocity(double v) {
+    this->velocity = v;};
 
     /*
      * set the wheel radius

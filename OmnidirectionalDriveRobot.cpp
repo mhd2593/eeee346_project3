@@ -9,6 +9,10 @@ OmnidirectionalDriveRobot ::OmnidirectionalDriveRobot(string model1, string mode
     wheelRadius = r;
     wheelDistanceLR = d;
     wheelDistanceFB = e;
+    frontLeftWheel = make_shared<Wheel>("FL", r, d, 0.0);
+    frontRightWheel = make_shared<Wheel>("FR", r, d, 0.0);
+    backRightWheel = make_shared<Wheel>("BR", r, d, 0.0);
+    backLeftWheel = make_shared<Wheel>("BL", r, d, 0.0);
 }
 double OmnidirectionalDriveRobot::getVel() {
     /*TODO: write your code*/ //DONE check

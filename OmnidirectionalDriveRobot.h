@@ -4,7 +4,6 @@
 #include "MobileRobot.h"
 
 class OmnidirectionalDriveRobot : public MobileRobot {
-    OmnidirectionalDriveRobot(string model1, string model, double r, double d, double e);
 
     static const string MODEL_NAME;
   shared_ptr<Wheel> frontLeftWheel;
@@ -72,5 +71,7 @@ public:
    * @param vel - velocity of the back right wheel
    */
   void setBackRightWheelVelocity(double vel);
+
+    OmnidirectionalDriveRobot(string model1, string model, double r, double d, double e);
 };
 #endif

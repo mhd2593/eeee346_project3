@@ -7,6 +7,13 @@ const string DifferentialDriveRobot::MODEL_NAME = "DifferentialDrive";
 DifferentialDriveRobot::DifferentialDriveRobot(string model, double r, double d) : MobileRobot(std::string(), model) {
     wheelRadius = r;
     wheelDistance = d;
+     //auto node = make_shared<Node<T>>(data); // create a new node with the entered data
+    //auto PrevNode = make_shared<Node<T>>(NULL); // you need to put not a pointer but a variable OR create a shared pointer using shared_ptr
+    //auto TempNode = root; //fails here
+    //
+    leftWheel = make_shared<Wheel>("L", r, d, 0.0);
+    rightWheel = make_shared<Wheel>("R", r, d, 0.0);
+
 
 }
 void DifferentialDriveRobot::setLeftWheelVelocity(double v) {
