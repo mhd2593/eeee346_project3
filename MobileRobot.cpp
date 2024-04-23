@@ -27,6 +27,20 @@ void MobileRobot::print(void) {
     /*TODO: write your code to print information about the added wheels
      *      your should call the print function of the object pointed to by the shared pointer in wheels
      */
+    //set<int>::iterator iter = myset.find(100);
+    //if (iter != myset.end())
+    //{
+    //    int setint = *iter;
+
+    //} set<int>:: iterator it;
+    // for( it = s.begin(); it!=s.end(); ++it){
+    //    int ans = *it;
+    //    cout << ans << endl;
+    // }
+    set<shared_ptr<Wheel>>::iterator iter;
+    for(iter = wheels.begin(); iter!=wheels.end(); ++iter){
+        (*iter)->print();
+    }
 }
 
 void MobileRobot::addWheel(shared_ptr<Wheel> wheel) {

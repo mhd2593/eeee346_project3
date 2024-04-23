@@ -41,7 +41,7 @@ int main(void) {
         //DifferentialDriveRobot diffRobot =  DifferentialDriveRobot("2",2,2);
        // diffRobot = DifferentialDriveRobot();
        // DifferentialDriveRobot
-       robot = new DifferentialDriveRobot("Differential Drive",radius, wheelDist);
+       robot = new DifferentialDriveRobot("DifferentialDrive",radius, wheelDist);
 
 
 
